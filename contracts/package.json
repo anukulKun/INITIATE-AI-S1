@@ -1,0 +1,25 @@
+{
+  "name": "initiate-ai-s1-contracts",
+  "version": "1.0.0",
+  "description": "INITIATEAIS1Core smart contracts for Initia appchain",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "test:verbose": "hardhat test --reporter spec",
+    "deploy:initia": "hardhat run scripts/deploy-initia.js --network initia_testnet",
+    "deploy:testnet": "hardhat run scripts/deploy-initia.js --network initia_testnet",
+    "deploy:appchain": "hardhat run scripts/deploy-initia.js --network initia_appchain",
+    "deploy:local": "hardhat run scripts/deploy-initia.js --network hardhat",
+    "smoke:testnet": "hardhat run scripts/smoke-test.js --network initia_testnet",
+    "smoke:appchain": "hardhat run scripts/smoke-test.js --network initia_appchain",
+    "smoke:local": "hardhat run scripts/smoke-test.js --network hardhat",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^17.4.2",
+    "hardhat": "^2.24.1"
+  }
+}
