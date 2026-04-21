@@ -1,0 +1,9 @@
+node_modules/
+.next/
+artifacts/
+cache/
+.git/
+*.env
+backend/.env
+contracts/.env
+project-dump.txt
