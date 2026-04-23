@@ -1,0 +1,16 @@
+{
+  "project_name": "INITIATE AI S1",
+  "track": ["DeFi", "AI"],
+  "chain_id": "<your_appchain_chain_id>",
+  "contract_address": "0x<initiate_ai_s1_contract>",
+  "deployment_tx": "0x<deployment_txn_hash>",
+  "interwovenkit": true,
+  "initia_native_features": [
+    "init_usernames",
+    "interwoven_bridge",
+    "auto_signing_session_ux"
+  ],
+  "demo_video": "https://youtube.com/...",
+  "github": "https://github.com/..."
+}
+
