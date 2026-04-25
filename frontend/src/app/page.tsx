@@ -399,8 +399,8 @@ export default function HomePage() {
           <span className="headline-line">Build AI Agents That Execute</span><br /><span className="muted">Secure Payments.</span>
         </motion.h1>
         <motion.p className="hero-desc" initial={{opacity:0,y:14}} animate={{opacity:1,y:0}} transition={{delay:.15}}>
-          Unified production system combining AgentFlow orchestration and SecurePay contract flows
-          with Initia wallet UX, .init resolution, and auditable payment lifecycle.
+          A unified production stack for orchestration and smart contract flows,
+          with Initia wallet UX, .init resolution, and an auditable payment lifecycle.
         </motion.p>
         <motion.div className="hero-actions" initial={{opacity:0,y:14}} animate={{opacity:1,y:0}} transition={{delay:.2}}>
           <Link href="/workflow" className="btn-hero-primary">Open Workflow Canvas <ArrowRight size={14} /></Link>
