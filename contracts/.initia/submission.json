@@ -1,7 +1,7 @@
 {
   "project_name": "INITIATE AI S1",
   "repo_url": "https://github.com/anukulKun/INITIATE-AI-S1",
-  "commit_sha": "<your-40-char-commit-sha>",
+  "commit_sha": "5376817768f4adbc08ae1eaca1f3c238d206c884",
   "rollup_chain_id": "initiate-ai-s1",
   "deployed_address": "0xb1108b62ac49caE97b3dABB1304AAA319dfE79eb",
   "vm": "evm",

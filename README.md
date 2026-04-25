@@ -27,3 +27,16 @@ The goal is simple: let a user describe intent, build or trigger an agent workfl
 3. Start the frontend: `cd frontend && npm install && npm run dev`
 4. Open `http://localhost:3000`, connect your Initia wallet via InterwovenKit,
    and open the Workflow Canvas to build and compile your first agent.
+
+
+## Rollup Deployment Note
+
+The custom Initia rollup (`initiate-ai-s1`, chain ID `207170159898403`) is 
+deployed locally using Weave/Hardhat. To run the full stack:
+
+1. Start the local rollup: `npx hardhat node` in `contracts/`
+2. Deploy the contract: `npx hardhat run scripts/deploy.js --network localhost`
+3. Expose it publicly: `ngrok http 8545` and update `INITIA_RPC_URL` in backend
+
+The contract is deployed at: `0xb1108b62ac49caE97b3dABB1304AAA319dfE79eb`
+Deployment tx: `0x8e5c65c8533f9b02eccbee5e5eab65d51375b68d3f211fc4573dd729d3681db7`
