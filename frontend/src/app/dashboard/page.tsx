@@ -78,6 +78,9 @@ export default function DashboardPage() {
     try {
       const result = await api.chat(chatWorkflowId, chatMessage);
       setChatResponse(JSON.stringify(result, null, 2));
+      if (result?.actionResult?.txHash) {
+        await reload();
+      }
     } catch (e: any) {
       setChatResponse("error: " + (e?.message || "unknown"));
     } finally { setChatLoading(false); }

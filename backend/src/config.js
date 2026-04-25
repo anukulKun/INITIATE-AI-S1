@@ -5,6 +5,10 @@ module.exports = {
   env: process.env.NODE_ENV || "development",
   port: Number(process.env.PORT || 3002),
   frontendUrl: process.env.FRONTEND_URL || "http://localhost:3000",
+  frontendUrls: (process.env.FRONTEND_URLS || process.env.FRONTEND_URL || "http://localhost:3000")
+    .split(",")
+    .map((url) => url.trim())
+    .filter(Boolean),
   jwtSecret: process.env.JWT_SECRET || "dev_jwt_secret",
   jwtExpiresIn: process.env.JWT_EXPIRES_IN || "12h",
   encryptionKey: process.env.ENCRYPTION_KEY || "dev_encryption_key_32_bytes_long__",

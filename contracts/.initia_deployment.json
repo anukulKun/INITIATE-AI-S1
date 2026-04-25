@@ -1,0 +1,10 @@
+{
+  "network": "initia_testnet",
+  "chainId": 7234,
+  "contractAddress": "0x1234567890123456789012345678901234567890",
+  "deploymentTx": "0xabcdef1234567890abcdef1234567890abcdef1234567890abcdef1234567890",
+  "deployerAddress": "0x7ff69972455eda55beafa8e1f8061d7d4d422b18",
+  "timestamp": "2026-04-25T00:00:00Z",
+  "blockNumber": 12345,
+  "note": "MOCK DEPLOYMENT - Replace with real values after successful testnet deployment"
+}

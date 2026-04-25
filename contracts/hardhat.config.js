@@ -9,6 +9,12 @@ module.exports = {
       accounts: [process.env.PRIVATE_KEY],
       chainId: 11155111,
     },
+    initia_testnet: {
+      url: "http://localhost:8545",
+      accounts: [process.env.PRIVATE_KEY],
+      chainId: 207170159898403,
+      gasPrice: 0,
+    },
   },
 };
 

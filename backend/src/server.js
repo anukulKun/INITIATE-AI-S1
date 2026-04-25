@@ -12,11 +12,20 @@ const defiRoutes = require("./routes/defi");
 const resolveRoutes = require("./routes/resolve");
 
 const app = express();
+const allowedOrigins = new Set(config.frontendUrls);
+
+function corsOrigin(origin, callback) {
+  if (!origin || allowedOrigins.has(origin)) {
+    return callback(null, true);
+  }
+
+  return callback(new Error(`CORS blocked for origin: ${origin}`));
+}
 
 app.use(helmet());
 app.use(
   cors({
-    origin: config.frontendUrl,
+    origin: corsOrigin,
     credentials: true,
   })
 );

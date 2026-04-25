@@ -17,7 +17,8 @@ async function request(path: string, options: RequestInit = {}) {
 
   const payload = await res.json().catch(() => ({}));
   if (!res.ok) {
-    throw new Error(payload.error || "Request failed");
+    const details = payload?.details ? ` | ${String(payload.details).slice(0, 400)}` : "";
+    throw new Error((payload.error || "Request failed") + details);
   }
   return payload;
 }

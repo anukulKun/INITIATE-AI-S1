@@ -1,0 +1,19 @@
+{
+  "project_name": "INITIATE AI S1",
+  "track": [
+    "DeFi",
+    "AI"
+  ],
+  "chain_id": "207170159898403",
+  "contract_address": "0xb1108b62ac49caE97b3dABB1304AAA319dfE79eb",
+  "deployment_tx": "0x8e5c65c8533f9b02eccbee5e5eab65d51375b68d3f211fc4573dd729d3681db7",
+  "deployer_address": "0x6093Db77A24d0594E01fe04FbEdc051f1E010ac9",
+  "interwovenkit": true,
+  "initia_native_features": [
+    "init_usernames",
+    "interwoven_bridge",
+    "auto_signing_session_ux"
+  ],
+  "demo_video": "https://youtube.com/REPLACE_ME",
+  "github": "https://github.com/REPLACE_ME"
+}

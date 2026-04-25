@@ -1,16 +1,12 @@
 {
   "project_name": "INITIATE AI S1",
-  "track": ["DeFi", "AI"],
-  "chain_id": "<your_appchain_chain_id>",
-  "contract_address": "0x<initiate_ai_s1_contract>",
-  "deployment_tx": "0x<deployment_txn_hash>",
-  "interwovenkit": true,
-  "initia_native_features": [
-    "init_usernames",
-    "interwoven_bridge",
-    "auto_signing_session_ux"
-  ],
-  "demo_video": "https://youtube.com/...",
-  "github": "https://github.com/..."
+  "repo_url": "https://github.com/anukulKun/INITIATE-AI-S1",
+  "commit_sha": "<your-40-char-commit-sha>",
+  "rollup_chain_id": "initiate-ai-s1",
+  "deployed_address": "0xb1108b62ac49caE97b3dABB1304AAA319dfE79eb",
+  "vm": "evm",
+  "native_feature": "auto-signing",
+  "core_logic_path": "contracts/contracts_src/INITIATEAIS1Core.sol",
+  "native_feature_frontend_path": "frontend/src/components/providers/InterwovenProvider.tsx",
+  "demo_video_url": "https://youtu.be/XtV61LRohq0"
 }
-
