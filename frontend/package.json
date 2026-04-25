@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@initia/interwovenkit-react": "file:vendor/interwovenkit-react",
+    "@base-ui/react": "^1.4.1",
+    "@initia/icons-react": "^2.1.0",
+    "@initia/interwovenkit-react": "^2.8.0",
+    "@react-spring/web": "^10.0.3",
+    "@tanstack/react-query": "^5.100.4",
+    "change-case": "^5.4.4",
     "clsx": "^2.1.1",
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.511.0",
@@ -18,6 +23,9 @@
     "react-dom": "^18.3.1",
     "reactflow": "^11.11.4",
     "tailwind-merge": "^3.3.1",
+    "viem": "^2.48.4",
+    "wagmi": "^3.6.4",
+    "xss": "^1.0.15",
     "zod": "^3.25.76",
     "zustand": "^5.0.5"
   },
