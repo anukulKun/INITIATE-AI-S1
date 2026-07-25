@@ -1,7 +1,7 @@
 /**
  * deploy.js
  *
- * Deploys INITIATEAIS1Core to the target network (Sepolia or Initia).
+ * Deploys InitflowCore to the target network (Sepolia or Initia).
  * 
  * Usage:
  *   npx hardhat run scripts/deploy.js --network sepolia
@@ -14,7 +14,7 @@ const path = require("path");
 
 async function main() {
   console.log("\n═══════════════════════════════════════════════════");
-  console.log("  INITIATEAIS1Core — Smart Contract Deployment");
+  console.log("  InitflowCore — Smart Contract Deployment");
   console.log("═══════════════════════════════════════════════════\n");
 
   // ── 1. Signer info ──────────────────────────────────────────────
@@ -39,8 +39,8 @@ async function main() {
     throw new Error("Chain ID is not set in hardhat.config.js");
   }
 
-  console.log("Deploying INITIATEAIS1Core...");
-  const Factory = await ethers.getContractFactory("INITIATEAIS1Core");
+  console.log("Deploying InitflowCore...");
+  const Factory = await ethers.getContractFactory("InitflowCore");
 
   // Constructor arg: the chain ID to lock this contract to
   const contract = await Factory.deploy(chainId);

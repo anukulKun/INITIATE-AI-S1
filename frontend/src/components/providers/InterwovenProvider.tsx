@@ -29,7 +29,7 @@ export function WalletProvider({ children }: PropsWithChildren) {
       <WagmiProvider config={wagmiConfig}>
         <InterwovenKitProvider
           defaultChainId={
-            process.env.NEXT_PUBLIC_INITIA_CHAIN_ID || "initiate-ai-s1"
+            process.env.NEXT_PUBLIC_INITIA_CHAIN_ID || "initflow"
           }
         >
           {children}

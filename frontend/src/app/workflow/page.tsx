@@ -410,7 +410,7 @@ export default function WorkflowBuilderPage() {
           <Link href="/" className="nav-logo" style={{ textDecoration: "none" }}>
             <Network size={15} />
           </Link>
-          <span className="nav-wordmark">INITIATE AI S1</span>
+          <span className="nav-wordmark">initflow</span>
           <div className="nav-divider" />
           <div className="nav-crumb">
             <span style={{ color: "var(--text-dim)" }}>Workflow</span>

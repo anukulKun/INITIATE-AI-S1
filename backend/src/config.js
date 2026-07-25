@@ -20,5 +20,5 @@ module.exports = {
   initiaRpcUrl: process.env.INITIA_RPC_URL || "",
   initiaChainId: Number(process.env.INITIA_CHAIN_ID || 0),
   deployerPrivateKey: process.env.DEPLOYER_PRIVATE_KEY || "",
-  initiateContractAddress: process.env.INITIATE_AI_S1_CONTRACT_ADDRESS || "",
+  initflowContractAddress: process.env.INITFLOW_CONTRACT_ADDRESS || "",
 };

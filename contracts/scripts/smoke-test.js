@@ -1,7 +1,7 @@
 /**
  * smoke-test.js
  *
- * Runs a full end-to-end smoke test against a deployed INITIATEAIS1Core contract.
+ * Runs a full end-to-end smoke test against a deployed InitflowCore contract.
  * Tests all three modules: SecureTransfer, GroupPayment, SavingsPot.
  *
  * Usage:
@@ -27,7 +27,7 @@ function logTx(label, hash) {
 
 async function main() {
   console.log("\n═══════════════════════════════════════════════════");
-  console.log("  INITIATEAIS1Core — Smoke Test");
+  console.log("  InitflowCore — Smoke Test");
   console.log(`  Network: ${network.name}`);
   console.log("═══════════════════════════════════════════════════");
 
@@ -46,7 +46,7 @@ async function main() {
   if (network.name === "hardhat") {
     // Deploy fresh for local testing
     console.log("\nLocal hardhat network — deploying fresh contract...");
-    const Factory = await ethers.getContractFactory("INITIATEAIS1Core");
+    const Factory = await ethers.getContractFactory("InitflowCore");
     const c = await Factory.deploy(31337); // hardhat chain ID
     await c.waitForDeployment();
     contractAddress = await c.getAddress();
@@ -66,7 +66,7 @@ async function main() {
     console.log(`\nLoaded contract: ${contractAddress}`);
   }
 
-  const contract = await ethers.getContractAt("INITIATEAIS1Core", contractAddress);
+  const contract = await ethers.getContractAt("InitflowCore", contractAddress);
 
   // ─────────────────────────────────────────────────────────────
   // MODULE 1: SECURE TRANSFER

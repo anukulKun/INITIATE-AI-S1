@@ -5,7 +5,7 @@ const config = require("../config");
 const hasChainConfig =
   Boolean(config.initiaRpcUrl) &&
   Boolean(config.deployerPrivateKey) &&
-  Boolean(config.initiateContractAddress);
+  Boolean(config.initflowContractAddress);
 
 const initiateAbi = [
   "function sendTransfer(address recipient, string remark) payable returns (uint256)",
@@ -24,7 +24,7 @@ let contract;
 if (hasChainConfig) {
   const provider = new ethers.JsonRpcProvider(config.initiaRpcUrl, config.initiaChainId || undefined);
   signer = new ethers.Wallet(config.deployerPrivateKey, provider);
-  contract = new ethers.Contract(config.initiateContractAddress, initiateAbi, signer);
+  contract = new ethers.Contract(config.initflowContractAddress, initiateAbi, signer);
 }
 
 function fakeTxHash(tag) {

@@ -1,5 +1,5 @@
 /**
- * INITIATEAIS1Core.test.js
+ * InitflowCore.test.js
  *
  * Full Hardhat/Mocha/Chai test suite.
  * Run: npx hardhat test
@@ -16,7 +16,7 @@ async function deployFixture() {
   const [owner, alice, bob, carol] = await ethers.getSigners();
 
   const chainId = 31337n; // hardhat default
-  const Factory = await ethers.getContractFactory("INITIATEAIS1Core");
+  const Factory = await ethers.getContractFactory("InitflowCore");
   const contract = await Factory.deploy(chainId);
   await contract.waitForDeployment();
 
@@ -25,7 +25,7 @@ async function deployFixture() {
 
 // ─── tests ────────────────────────────────────────────────────────
 
-describe("INITIATEAIS1Core", function () {
+describe("InitflowCore", function () {
 
   // ── Chain guard ───────────────────────────────────────────────
 

@@ -1,7 +1,7 @@
 /**
  * deploy-initia.js
  *
- * Deploys INITIATEAIS1Core to the target Initia network.
+ * Deploys InitflowCore to the target Initia network.
  * Outputs a JSON artifact with all deployment info needed for submission.json.
  *
  * Usage:
@@ -15,7 +15,7 @@ const path = require("path");
 
 async function main() {
   console.log("\n═══════════════════════════════════════════════════");
-  console.log("  INITIATEAIS1Core — Initia Deployment");
+  console.log("  InitflowCore — Initia Deployment");
   console.log("═══════════════════════════════════════════════════\n");
 
   // ── 1. Signer info ──────────────────────────────────────────────
@@ -41,8 +41,8 @@ async function main() {
     throw new Error("INITIA_CHAIN_ID (or APPCHAIN_CHAIN_ID) is not set in your .env");
   }
 
-  console.log("Deploying INITIATEAIS1Core...");
-  const Factory = await ethers.getContractFactory("INITIATEAIS1Core");
+  console.log("Deploying InitflowCore...");
+  const Factory = await ethers.getContractFactory("InitflowCore");
 
   // Constructor arg: the chain ID to lock this contract to
   const contract = await Factory.deploy(chainId);
@@ -91,7 +91,7 @@ async function main() {
 
   // ── 5. Write/update submission.json ────────────────────────────
   const submission = {
-    project_name: "INITIATE AI S1",
+    project_name: "initflow",
     track: ["DeFi", "AI"],
     chain_id:         chainId.toString(),
     contract_address: contractAddress,

@@ -1,7 +1,7 @@
 {
-  "name": "initiate-ai-s1-contracts",
+  "name": "initflow-contracts",
   "version": "1.0.0",
-  "description": "INITIATEAIS1Core smart contracts for Initia appchain",
+  "description": "InitflowCore smart contracts for Initia appchain",
   "private": true,
   "scripts": {
     "compile": "hardhat compile",

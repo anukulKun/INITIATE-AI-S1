@@ -397,7 +397,7 @@ export default function DashboardPage() {
       <nav className="nav">
         <div className="nav-l">
           <div className="nav-logo"><Network size={14} /></div>
-          <span className="nav-wm">INITIATE AI S1</span>
+          <span className="nav-wm">initflow</span>
           <div className="nav-div" />
           <span className="nav-crumb">dashboard</span>
         </div>

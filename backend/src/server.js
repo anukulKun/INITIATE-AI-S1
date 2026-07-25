@@ -40,7 +40,7 @@ app.use(
 );
 
 app.get("/api/health", (_req, res) => {
-  res.json({ status: "ok", service: "initiate-ai-s1" });
+  res.json({ status: "ok", service: "initflow" });
 });
 
 app.use("/api/auth", authRoutes);

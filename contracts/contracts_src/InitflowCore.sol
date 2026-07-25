@@ -2,8 +2,8 @@
 pragma solidity 0.8.24;
 
 /**
- * @title  INITIATEAIS1Core
- * @notice Unified contract for INITIATE AI S1 on Initia appchain.
+ * @title  InitflowCore
+ * @notice Unified contract for initflow on Initia appchain.
  *         Three modules:
  *           1. SecureTransfer  – escrow-based P2P transfers
  *           2. GroupPayment    – multi-contributor pools with auto-distribution
@@ -12,7 +12,7 @@ pragma solidity 0.8.24;
  * @dev    Deployed on a custom Initia EVM appchain.
  *         Chain ID guard prevents replay on foreign chains.
  */
-contract INITIATEAIS1Core {
+contract InitflowCore {
 
     // ─────────────────────────────────────────────────────────────
     // STATE: Chain Guard

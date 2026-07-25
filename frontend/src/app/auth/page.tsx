@@ -279,7 +279,7 @@ export default function AuthPage() {
       <nav className="auth-nav">
         <div className="nav-left">
           <Link href="/" className="nav-logo"><Network size={15} /></Link>
-          <Link href="/" className="nav-wordmark">INITIATE AI S1</Link>
+          <Link href="/" className="nav-wordmark">initflow</Link>
           <div className="nav-divider" />
           <span className="nav-sub">Initia Native DeFi Automation</span>
         </div>
@@ -295,7 +295,7 @@ export default function AuthPage() {
 
           {/* Header */}
           <div className="card-head">
-            <div className="card-eyebrow">INITIATE AI S1</div>
+            <div className="card-eyebrow">initflow</div>
             <div className="card-title">
               {mode === "login" ? "Welcome back." : "Create account."}
             </div>

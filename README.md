@@ -1,6 +1,6 @@
 <div align="center">
 
-# INITIATE AI S1
+# initflow
 
 **Drag-and-drop DeFi automation powered by AI agents — built on Initia**
 
@@ -8,27 +8,27 @@
 
 No code. No manual transactions. No juggling ten different tools.
 
-[Live App](https://initiate-ai.vercel.app) &nbsp;·&nbsp;
+[Live App](https://initflow.vercel.app) &nbsp;·&nbsp;
 [Docs](#api) &nbsp;·&nbsp;
 [Discord](#)
 
 </div>
 
 <p align="center">
-  <a href="https://github.com/anukulKun/INITIATE-AI-S1/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-000000.svg" /></a>
-  <a href="https://github.com/anukulKun/INITIATE-AI-S1"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-76%25-3178C6?logo=typescript&logoColor=white" /></a>
-  <a href="https://initiate-ai.vercel.app"><img alt="Live app" src="https://img.shields.io/badge/Live-initiate--ai.vercel.app-000000" /></a>
+  <a href="https://github.com/anukulKun/initflow/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-000000.svg" /></a>
+  <a href="https://github.com/anukulKun/initflow"><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-76%25-3178C6?logo=typescript&logoColor=white" /></a>
+  <a href="https://initflow.vercel.app"><img alt="Live app" src="https://img.shields.io/badge/Live-initflow.vercel.app-000000" /></a>
 </p>
 
 ---
 
-## What is INITIATE AI S1?
+## What is initflow?
 
 DeFi today means manually signing every transaction, switching between five different tools, and hoping your bridge didn't stall at step 3. For anyone who manages recurring payments, splits bills with a group, or moves assets across chains — it's genuinely painful.
 
-INITIATE AI S1 is a unified AI + DeFi automation platform deployed on its own Initia appchain. You drag-and-drop a workflow — transfers, group payments, savings pots, cross-chain bridges — and the platform compiles it into an AI agent that executes real on-chain transactions autonomously. No code. No per-step signing. No babysitting.
+initflow is a unified AI + DeFi automation platform deployed on its own Initia appchain. You drag-and-drop a workflow — transfers, group payments, savings pots, cross-chain bridges — and the platform compiles it into an AI agent that executes real on-chain transactions autonomously. No code. No per-step signing. No babysitting.
 
-## Why INITIATE AI S1?
+## Why initflow?
 
 **DeFi UX hasn't caught up to DeFi capability.** Power users deal with fragmented tooling. Everyone else avoids it entirely.
 
@@ -38,7 +38,7 @@ INITIATE AI S1 is a unified AI + DeFi automation platform deployed on its own In
 
 3. **Human-readable addresses.** Every payment node supports `.init` username resolution. Send to `alice.init`, not `0x4f3a...`.
 
-4. **Safe by default.** `INITIATEAIS1Core.sol` enforces escrow-safe logic across all three modules — SecureTransfer, GroupPayment, and SavingsPot — with fraud checks, encrypted remarks, and a full audit log on every payment flow.
+4. **Safe by default.** `InitflowCore.sol` enforces escrow-safe logic across all three modules — SecureTransfer, GroupPayment, and SavingsPot — with fraud checks, encrypted remarks, and a full audit log on every payment flow.
 
 5. **Interwoven Bridge as a first-class node.** Pull assets from external chains directly inside the workflow canvas, without leaving the builder.
 
@@ -56,7 +56,7 @@ into a structured Groq system prompt + DeFi action registry
 Backend agent runtime receives the compiled prompt
         │
         ▼
-Agent maps LLM decisions → contract calls on INITIATEAIS1Core.sol
+Agent maps LLM decisions → contract calls on InitflowCore.sol
 (SecureTransfer / GroupPayment / SavingsPot modules)
         │
         ▼
@@ -74,8 +74,8 @@ Audit log + encrypted remarks written on-chain
 ### With Docker
 
 ```bash
-git clone https://github.com/anukulKun/INITIATE-AI-S1.git
-cd INITIATE-AI-S1
+git clone https://github.com/anukulKun/initflow.git
+cd initflow
 cp backend/.env.example backend/.env
 cp frontend/.env.example frontend/.env.local
 # fill in your keys, then:
@@ -108,7 +108,7 @@ Open `http://localhost:3000`, connect your Initia wallet via InterwovenKit, and 
 
 ## Smart contracts
 
-The core logic lives in `INITIATEAIS1Core.sol`, which implements three escrow-safe modules:
+The core logic lives in `InitflowCore.sol`, which implements three escrow-safe modules:
 
 | Module | What it does |
 |---|---|
@@ -141,7 +141,7 @@ Deployment tx: `0x8e5c65c8...`
 |---|---|
 | [`frontend/`](frontend) | Workflow canvas UI — Next.js, React Flow, InterwovenKit |
 | [`backend/`](backend) | Agent runtime — Node.js, Groq SDK, contract call dispatcher |
-| [`contracts/`](contracts) | `INITIATEAIS1Core.sol` — SecureTransfer, GroupPayment, SavingsPot |
+| [`contracts/`](contracts) | `InitflowCore.sol` — SecureTransfer, GroupPayment, SavingsPot |
 | [`docker/`](docker) | Docker Compose configuration |
 | [`.initia/`](.initia) | Initia appchain configuration |
 
@@ -153,7 +153,7 @@ Deployment tx: `0x8e5c65c8...`
 |---|---|
 | Frontend | Next.js 15, React Flow (workflow canvas), InterwovenKit |
 | Backend | Node.js, Groq SDK, DeFi action registry |
-| Smart contracts | Solidity — `INITIATEAIS1Core.sol` |
+| Smart contracts | Solidity — `InitflowCore.sol` |
 | Chain | Custom Initia appchain (chain ID `207170159898403`) |
 | Wallet / session | InterwovenKit (auto-signing / session UX) |
 | Bridge | Interwoven Bridge (native Initia) |

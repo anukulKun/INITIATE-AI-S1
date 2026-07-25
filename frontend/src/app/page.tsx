@@ -360,7 +360,7 @@ export default function HomePage() {
       <nav className="nav">
         <div className="nav-left">
           <div className="nav-logo"><Network size={16} /></div>
-          <span className="nav-wordmark">INITIATE AI S1</span>
+          <span className="nav-wordmark">initflow</span>
           <div className="nav-divider" />
           <span className="nav-sub">Initia Native DeFi Automation</span>
         </div>
@@ -519,7 +519,7 @@ export default function HomePage() {
       {/* ── Footer ── */}
       <footer className="footer">
         <div className="footer-l">
-          <span className="footer-name">INITIATE AI S1</span>
+          <span className="footer-name">initflow</span>
           <div className="footer-links">
             <a href="#">Docs</a>
             <a href="#">GitHub</a>

@@ -3,7 +3,7 @@ import "./globals.css";
 import { WalletProvider } from "@/components/providers/InterwovenProvider";
 
 export const metadata: Metadata = {
-  title: "INITIATE AI S1",
+  title: "initflow",
   description: "Visual AI-agent orchestration with secure DeFi execution on Initia.",
 };
 
